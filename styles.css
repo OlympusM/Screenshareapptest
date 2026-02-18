@@ -1,0 +1,141 @@
+    html {
+        color: rgb(233, 233, 233);
+    }
+    
+    body { 
+        margin: 0px;
+        font-family: Helvetica;  
+        background-color: rgb(23 30 48);
+        background-image: url(assets/zoltan-voros-rhythm-and-blues.webp);
+        background-size: cover;
+        backdrop-filter: blur(20px);
+    }
+
+    .main-container {
+        display: grid;
+        padding: 20px;
+        height: 100vh;
+        grid-template-columns: 0;
+    }
+
+    .call-area {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        align-items: center;
+    }
+
+    #idArea { 
+        width: 300px; 
+        height: 50px; 
+        resize: none;
+        border: none;
+        background-color: rgb(29, 29, 29);
+        border-radius: 10px;
+        padding: 10px;
+        padding: 10px;
+        box-shadow: 4px 4px 10px #000000a3, inset 2px 2px 4px #4b4b4ba3;
+        color: rgb(233, 233, 233);
+        font-family: helvetica;
+    }
+
+    #idArea:focus {
+        outline: none;
+    }
+
+    #start { 
+        padding: 10px; 
+        margin-top: 10px; 
+        cursor: pointer; 
+        border-radius: 10px;
+        border: none;
+        background-color: #2b69ed;
+        box-shadow: 4px 4px 10px #000000a3, inset 2px 2px 4px #5d90ff;
+        font-family: helvetica;
+        font-weight: 700;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    #start:hover {
+        background-color: #5a88ec;
+        transition: background-color 0.2s ease-in-out;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    #start:active {
+        background-color: #9db9f7;
+        transform: scale(0.97);
+    }
+
+    #end { 
+        padding: 10px; 
+        margin-top: 10px; 
+        cursor: pointer; 
+        border-radius: 10px;
+        border: none;
+        background-color: #2b69ed;
+        box-shadow: 4px 4px 10px #000000a3, inset 2px 2px 4px #5d90ff;
+        font-family: helvetica;
+        font-weight: 700;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    #end:hover {
+        background-color: #5a88ec;
+        transition: background-color 0.2s ease-in-out;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    #end:active {
+        background-color: #9db9f7;
+        transform: scale(0.97);
+    }
+
+    #remoteVideo {
+        display: none;
+        margin: 20px;
+        max-height: 70vh;
+        max-width: 100% ;
+        background-color: black;
+
+    }
+    
+    .friend-container {
+        display: none;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-left: 4px;
+        padding-right: 4px;
+        grid-column: 1;
+        height: 100%;
+        background-color: #161616;
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px #000000a3, inset 2px 2px 4px #4b4b4ba3;
+    }
+
+    #friendlist {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .friend-btn {
+        padding: 10px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 4px;
+        color: rgb(150 151 158);
+        font-family: helvetica;
+        transition: background-color 0.1s ease-in-out;
+    }
+
+    .friend-btn:hover {
+        background-color: rgba(255, 255, 255, 0.027);
+        transition: background-color 0.1s ease-in-out;
+    }
+
+    .friend-btn:focus {
+        background-color: rgba(255, 255, 255, 0.219);
+    }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Odyssey</title>
+  <link rel="icon" href="assets/electron-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="friend-container">
+      <ul id="friendlist">
+        <li><button class="friend-btn">Friend Example</button></li>
+        <li><button class="friend-btn">Friend Example</button></li>
+        <li><button class="friend-btn">Friend Example</button></li>
+        <li><button class="friend-btn">Friend Example</button></li>
+      </ul>
+    </div>
+    <div class="call-area">
+      <p>Your ID:</p>
+      <textarea id="idArea" readonly></textarea>
+      <div class="callbutton">
+        <button id="start">Start Call</button>
+        <button id="end">End Call</button>
+      </div>
+      <audio id="remoteAudio" autoplay></audio>
+      <video id="remoteVideo" autoplay playsinline controls></video>
+      <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+      <script src="Webrtc.js"></script>
+    </div>
+  </div>
+</body>
+</html>
