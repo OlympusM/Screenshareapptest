@@ -1,4 +1,4 @@
-Screenshare & Voice Chat Test Web APP.
+Screenshare & Voice Chat Test Web App.
 A lightweight, peer-to-peer (P2P) web application for real-time screen sharing and voice communication. 
 This project is a simple implementation of PeerJS to demonstrate how WebRTC works in the browser.
 
